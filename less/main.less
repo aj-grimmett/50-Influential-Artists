@@ -1,0 +1,51 @@
+.title-container{
+background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg");
+background-repeat: no-repeat;
+background-position: center;
+ padding: 2% 1% 10%;
+ width: 90%;
+ text-align: center;
+ @media @phone {
+     .column();
+     width: 100%;
+ }
+ 
+ h1{
+     width: 100%;
+    padding-top:10%;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+ }
+}
+
+.artists-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4%;
+    @media @phone {
+        .column();
+    }
+    img{
+        width: 50%;
+    }
+    .artist{
+        display: flex;
+        flex-direction: column;
+        @media @phone {
+            .column();
+            padding: 2%;
+        }
+    .bio{
+        width: 70%;
+    }
+  }
+  a{
+      text-decoration: none;
+      color: @font-color;
+      padding: 2%;
+      
+      font-size: 1.5rem;
+  }
+}
